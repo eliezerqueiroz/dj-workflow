@@ -1,0 +1,42 @@
+# ============================================================
+# DJ Workflow — .gitignore
+# ============================================================
+
+# --- Logs e relatórios gerados ---
+logs/
+listas/
+
+# --- macOS ---
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# --- Windows (caso use no futuro) ---
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Editores ---
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# --- Áudio (nunca deve entrar no repo) ---
+*.mp3
+*.m4a
+*.flac
+*.wav
+*.aac
+*.ogg
+*.wma
+*.opus
+
+# --- Temporários ---
+*.tmp
+*.bak
+*.orig

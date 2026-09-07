@@ -1,0 +1,60 @@
+# ============================================================
+# DJ Zezé — Configuração do Workflow
+# ============================================================
+# Este arquivo define os caminhos e preferências do workflow.
+# Edite conforme necessário se mudar de Mac ou trocar de HD.
+# ============================================================
+
+# --- Caminhos Principais ---
+caminhos:
+  # Pasta de música no PC (espelho do HD)
+  pc: "~/Documents/DjZeze"
+
+  # Pasta raiz da biblioteca organizada no HD
+  hd: "/Volumes/DEUZBENZA/Music/Biblioteca"
+
+  # Nome do volume do HD (pra detectar se está conectado)
+  hd_volume: "DEUZBENZA"
+
+  # Pastas legadas no HD (serão migradas pra Biblioteca/)
+  hd_legado:
+    - "/Volumes/DEUZBENZA/Music/Dj-Zeze"
+    - "/Volumes/DEUZBENZA/Music/Musicas Eliezer"
+    - "/Volumes/DEUZBENZA/Music/Set Mostra"
+    - "/Volumes/DEUZBENZA/Music/sons"
+
+  # Pasta de downloads (onde as músicas novas caem)
+  downloads: "~/Downloads"
+
+  # Pasta do projeto (scripts, configs)
+  projeto: "~/Desktop/dj-workflow"
+
+# --- Preferências de Áudio ---
+audio:
+  formato_preferido: "mp3"
+  qualidade_minima: 320  # kbps
+  extensoes_aceitas:
+    - ".mp3"
+    - ".m4a"
+    - ".flac"
+    - ".wav"
+    - ".aac"
+    - ".ogg"
+
+# --- Padrão de Nomes ---
+nomes:
+  # Padrão para renomear arquivos (futuro)
+  padrao: "{artista} - {titulo}"
+  # Substituir caracteres inválidos por:
+  substituir_invalidos: "_"
+
+# --- Sync ---
+sync:
+  # Direção padrão do sync
+  direcao: "hd_para_pc"  # ou "pc_para_hd"
+  # Excluir do sync
+  excluir:
+    - ".DS_Store"
+    - "._*"
+    - "Thumbs.db"
+    - "desktop.ini"

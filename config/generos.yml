@@ -1,0 +1,207 @@
+# ============================================================
+# DJ Zezé — Mapa de Gêneros
+# ============================================================
+# Define os gêneros da biblioteca, seus aliases (sinônimos
+# encontrados em tags ID3) e artistas de referência.
+#
+# Regras:
+# - "Pagode" → Samba (variação de samba)
+# - "Pagode Baiano" / "Pagodão" → Pagodão (ritmo baiano)
+# - Aliases são case-insensitive na hora da comparação
+# ============================================================
+
+generos:
+
+  Afrobeat:
+    aliases:
+      - "Afrobeats"
+      - "Afro-Beat"
+      - "Afropop"
+      - "Afro Pop"
+      - "Afro House"
+      - "Afro Fusion"
+    artistas_referencia:
+      - "Burna Boy"
+      - "Wizkid"
+      - "Tems"
+      - "Davido"
+      - "Rema"
+      - "Tiwa Savage"
+      - "Yemi Alade"
+      - "CKay"
+
+  Amapiano:
+    aliases:
+      - "Amapiano House"
+      - "Piano"
+      - "Yanos"
+    artistas_referencia:
+      - "Kabza De Small"
+      - "DJ Maphorisa"
+      - "Uncle Waffles"
+      - "Focalistic"
+      - "Major League DJz"
+
+  Brasilidades:
+    aliases:
+      - "Forró"
+      - "MPB"
+      - "Axé"
+      - "Maracatu"
+      - "Brega"
+      - "Arrocha"
+      - "Frevo"
+      - "Côco"
+      - "Ciranda"
+      - "Manguebeat"
+      - "Carimbó"
+    artistas_referencia:
+      - "Marinês"
+      - "Ilê Aiyê"
+      - "Luiz Gonzaga"
+      - "Alceu Valença"
+      - "Elba Ramalho"
+
+  DanceHall:
+    aliases:
+      - "Dancehall"
+      - "Bashment"
+      - "Ragga"
+      - "Dancehall Reggae"
+    artistas_referencia:
+      - "Vybz Kartel"
+      - "Popcaan"
+      - "Sean Paul"
+      - "Shenseea"
+      - "Spice"
+      - "Alkaline"
+
+  Funk:
+    aliases:
+      - "Funk Carioca"
+      - "Baile Funk"
+      - "Funk Brasileiro"
+      - "Funk Melody"
+      - "Funk Ostentação"
+      - "Funk Proibidão"
+    artistas_referencia:
+      - "MC Kevin o Chris"
+      - "Dennis DJ"
+      - "Ludmilla"
+
+  Jazz:
+    aliases:
+      - "Jazz Fusion"
+      - "Acid Jazz"
+      - "Nu Jazz"
+      - "Jazz Funk"
+      - "Smooth Jazz"
+      - "Bebop"
+      - "Free Jazz"
+    artistas_referencia: []
+
+  Kuduro:
+    aliases:
+      - "Kuduru"
+    artistas_referencia:
+      - "Buraka Som Sistema"
+      - "Dog Murras"
+      - "Titica"
+
+  Musica Latina:
+    aliases:
+      - "Reggaeton"
+      - "Reggaetón"
+      - "Salsa"
+      - "Cumbia"
+      - "Latin"
+      - "Bachata"
+      - "Merengue"
+      - "Dembow"
+    artistas_referencia: []
+
+  Pagodão:
+    aliases:
+      - "Pagode Baiano"
+      - "Pagodão Baiano"
+    artistas_referencia:
+      - "Psirico"
+      - "Parangolé"
+      - "Léo Santana"
+      - "La Fúria"
+      - "Igor Kannário"
+      - "Edcity"
+      - "Harmonia do Samba"
+
+  Rap:
+    aliases:
+      - "Hip Hop"
+      - "Hip-Hop"
+      - "Rap Nacional"
+      - "Trap"
+      - "Boom Bap"
+      - "Rap Brasileiro"
+      - "Conscious Hip Hop"
+    artistas_referencia:
+      - "Racionais MC's"
+      - "Djonga"
+      - "Mano Brown"
+      - "Baco Exu do Blues"
+      - "Criolo"
+      - "Emicida"
+      - "Filipe Ret"
+      - "Haikaiss"
+
+  Reggae-Dub:
+    aliases:
+      - "Reggae"
+      - "Dub"
+      - "Roots Reggae"
+      - "Roots"
+      - "Lovers Rock"
+      - "Ska"
+    artistas_referencia:
+      - "Bob Marley"
+      - "Jimmy Cliff"
+      - "Natiruts"
+      - "Tribo de Jah"
+
+  Samba:
+    aliases:
+      - "Samba de Roda"
+      - "Partido Alto"
+      - "Samba Rock"
+      - "Pagode"
+      - "Samba de Terreiro"
+      - "Samba Enredo"
+      - "Samba Canção"
+      - "Samba Reggae"
+      - "Samba Chula"
+    artistas_referencia:
+      - "Jorge Aragão"
+      - "Zeca Pagodinho"
+      - "Beth Carvalho"
+      - "Arlindinho"
+      - "Fundo de Quintal"
+      - "Martinho da Vila"
+      - "Clara Nunes"
+      - "Cartola"
+
+# ============================================================
+# Pastas Especiais (não são gêneros musicais)
+# ============================================================
+pastas_especiais:
+  _Autorais:
+    descricao: "Músicas autorais do DJ Zezé"
+  _Inbox:
+    descricao: "Downloads novos aguardando triagem"
+  _Outros:
+    descricao: "Faixas com gênero não mapeado"
+  _Para Celular:
+    descricao: "Seleção para transferir pro celular"
+  _Quarentena:
+    descricao: "Faixas com problemas (sem tag, corrompida, low quality)"
+  _Samples-Vinhetas:
+    descricao: "Vinhetas, intros, SFX, efeitos sonoros"
+  _Sets:
+    descricao: "Gravações de sets e mixes"
