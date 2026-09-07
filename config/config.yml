@@ -51,7 +51,7 @@ nomes:
 # --- Sync ---
 sync:
   # Direção padrão do sync
-  direcao: "hd_para_pc"  # ou "pc_para_hd"
+  direcao: "pc_para_hd"  # ou "hd_para_pc"
   # Excluir do sync
   excluir:
     - ".DS_Store"
