@@ -172,7 +172,6 @@ print()
 print("━━━ 🔄 UNIFICAÇÕES PLANEJADAS ━━━━━━━━━━━━━━━━━━━━━━━━━\n")
 
 unificacoes = [
-    ("Samba de terreiro", "Samba"),
     ("Samba-Partido alto", "Samba"),
 ]
 

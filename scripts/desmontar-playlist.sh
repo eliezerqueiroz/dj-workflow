@@ -201,16 +201,26 @@ for fpath in playlist_files:
         dest_counts['DUPLICATA'] = dest_counts.get('DUPLICATA', 0) + 1
         continue
 
-    # Classificar gênero
-    search_text = f"{fn_clean} {artist_tag} {title_tag} {genre_tag}"
+    # Classificar gênero: prioridade absoluta para metadado existente
     matched_genre = None
     match_reason = ""
 
-    for kw, target_g in alias_to_genre.items():
-        if kw and kw in search_text:
-            matched_genre = target_g
-            match_reason = f"palavra/artista '{kw}'"
-            break
+    # 1. Se o arquivo já tiver metadado de gênero válido nas tags ID3:
+    if genre_tag and genre_tag not in {'other', 'unknown', 'genre', 'none'}:
+        for kw, target_g in alias_to_genre.items():
+            if kw and (kw == genre_tag or kw in genre_tag):
+                matched_genre = target_g
+                match_reason = f"metadado de gênero existente nas tags: '{genre_tag}'"
+                break
+
+    # 2. Se não encontrou pela tag de gênero, busca por artista e título
+    if not matched_genre:
+        search_text = f"{fn_clean} {artist_tag} {title_tag}"
+        for kw, target_g in alias_to_genre.items():
+            if kw and kw in search_text:
+                matched_genre = target_g
+                match_reason = f"palavra/artista '{kw}'"
+                break
 
     if not matched_genre:
         matched_genre = "_Outros"

@@ -221,7 +221,6 @@ generos:
       - "Partido Alto"
       - "Samba Rock"
       - "Pagode"
-      - "Samba de Terreiro"
       - "Samba Enredo"
       - "Samba Canção"
       - "Samba Reggae"
@@ -257,6 +256,18 @@ generos:
       - "Soweto"
       - "Raça Negra"
       - "Molejo"
+
+  Samba de Terreiro:
+    aliases:
+      - "Samba de terreiro"
+      - "Pontos de Terreiro"
+      - "Pontos Cantados"
+      - "Candomblé"
+      - "Umbanda"
+      - "Toques de Atabaque"
+      - "Samba de Caboclo"
+      - "Samba Caboclo"
+    artistas_referencia: []
 
 # ============================================================
 # Pastas Especiais (não são gêneros musicais)
