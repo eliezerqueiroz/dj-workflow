@@ -228,7 +228,7 @@ for pasta, artistas in sorted(pastas_dados.items()):
         alerta_md = "-"
         if art_norm in artist_expected_genre:
             gen_esperado = artist_expected_genre[art_norm]
-            if gen_esperado.lower() != pasta.lower():
+            if normalizar(gen_esperado) != normalizar(pasta):
                 alerta = f" ⚠️  [ATENÇÃO: Artista esperado em '{gen_esperado}']"
                 alerta_md = f"⚠️ Esperado em `{gen_esperado}`"
                 suspeitas_pasta.append((art, gen_esperado, len(tracks)))

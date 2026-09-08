@@ -135,7 +135,7 @@ TIMESTAMP=$(date '+%Y%m%d-%H%M%S')
 LOG_FILE="$LOGS_DIR/sync-${TIMESTAMP}.log"
 
 # Argumentos do rsync
-RSYNC_FLAGS=("-avh" "--stats")
+RSYNC_FLAGS=("-avh" "--modify-window=2" "--stats")
 RSYNC_EXCLUDE=(
   "--exclude=.DS_Store"
   "--exclude=._*"
