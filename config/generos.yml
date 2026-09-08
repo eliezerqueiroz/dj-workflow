@@ -298,6 +298,59 @@ generos:
       - "Calvin Harris"
       - "Jorja Smith"
 
+  Kizomba:
+    aliases:
+      - "Zouk"
+      - "Tarraxinha"
+      - "Tarraxa"
+      - "Semba"
+      - "Kizomba/Zouk"
+    artistas_referencia:
+      - "Denis Graça"
+      - "Jennifer Dias"
+      - "Pérola"
+      - "Edgar Domingos"
+      - "Erika Nelumba"
+      - "Afrikanas"
+      - "Anselmo Ralph"
+      - "C4 Pedro"
+      - "Nelson Freitas"
+
+  Bachata:
+    aliases:
+      - "Bachata Urbana"
+      - "Bachata Tradicional"
+      - "Bachata Romantica"
+    artistas_referencia:
+      - "Aventura"
+      - "Romeo Santos"
+      - "Prince Royce"
+      - "Xtreme"
+      - "Frank Reyes"
+      - "Zacarías Ferreira"
+      - "Juan Luis Guerra"
+
+  Reggaeton:
+    aliases:
+      - "Reggae-Ton"
+      - "Reggae Ton"
+      - "Perreo"
+      - "Dembow"
+      - "Urbano Latino"
+    artistas_referencia:
+      - "Daddy Yankee"
+      - "Don Omar"
+      - "Tego Calderón"
+      - "Wisin & Yandel"
+      - "Luny Tunes"
+      - "J Alvarez"
+      - "Farruko"
+      - "Tito El Bambino"
+      - "Jowell & Randy"
+      - "J Balvin"
+      - "Bad Bunny"
+
+
 # ============================================================
 # Pastas Especiais (não são gêneros musicais)
 # ============================================================
