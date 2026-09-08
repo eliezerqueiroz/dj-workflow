@@ -32,16 +32,18 @@ CONFIG_FILE="$PROJECT_DIR/config/config.yml"
 LOGS_DIR="$PROJECT_DIR/logs"
 
 EXECUTAR=false
+APAGAR=false
 DIRECAO="" # "pc_para_hd" ou "hd_para_pc"
 
 for arg in "$@"; do
   case "$arg" in
     --help|-h)
-      echo "Uso: sync-musica.sh [--executar] [--dry-run] [--push] [--pull]"
+      echo "Uso: sync-musica.sh [--executar] [--dry-run] [--delete] [--push] [--pull]"
       echo ""
       echo "Opções:"
       echo "  --dry-run   Apenas simula a sincronização (padrão)"
       echo "  --executar  Aplica a sincronização no disco"
+      echo "  --delete    Remove no destino arquivos apagados na origem (espelho exato)"
       echo "  --push      Sincroniza PC -> HD (envia alterações)"
       echo "  --pull      Sincroniza HD -> PC (recebe alterações)"
       echo "  --help      Mostra esta ajuda"
@@ -52,6 +54,9 @@ for arg in "$@"; do
       ;;
     --dry-run)
       EXECUTAR=false
+      ;;
+    --delete)
+      APAGAR=true
       ;;
     --push|--pc-para-hd)
       DIRECAO="pc_para_hd"
@@ -147,6 +152,10 @@ RSYNC_EXCLUDE=(
 
 if ! $EXECUTAR; then
   RSYNC_FLAGS+=("--dry-run")
+fi
+
+if $APAGAR; then
+  RSYNC_FLAGS+=("--delete")
 fi
 
 echo -e "  🔍 Comparando diretórios e calculando alterações..."

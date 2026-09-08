@@ -267,7 +267,36 @@ generos:
       - "Toques de Atabaque"
       - "Samba de Caboclo"
       - "Samba Caboclo"
-    artistas_referencia: []
+  Crioulo-CaboVerde:
+    aliases:
+      - "Cabo Verde"
+      - "Morna"
+      - "Funaná"
+      - "Coladeira"
+      - "Kriolu"
+      - "Batuku"
+    artistas_referencia:
+      - "Elida Almeida"
+      - "Cesária Évora"
+      - "Mayra Andrade"
+      - "INDIRA"
+      - "Garry"
+      - "Calema"
+
+  Pop-World Music:
+    aliases:
+      - "Pop"
+      - "World Music"
+      - "R&B"
+      - "Global Pop"
+      - "Electronic Pop"
+    artistas_referencia:
+      - "Beyoncé"
+      - "Rihanna"
+      - "Adele"
+      - "LMFAO"
+      - "Calvin Harris"
+      - "Jorja Smith"
 
 # ============================================================
 # Pastas Especiais (não são gêneros musicais)
