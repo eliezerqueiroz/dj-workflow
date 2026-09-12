@@ -40,3 +40,11 @@ $RECYCLE.BIN/
 *.tmp
 *.bak
 *.orig
+scratch/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
